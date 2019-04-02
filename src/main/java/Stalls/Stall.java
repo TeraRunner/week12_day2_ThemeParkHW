@@ -1,10 +1,13 @@
 package Stalls;
 
-public abstract class Stall {
+import Interfaces.IReviwed;
+
+public abstract class Stall implements IReviwed {
 
     private String name;
     private String ownerName;
     private int parkingSpot;
+    private int rating;
 
     public Stall(String name, String ownerName, int parkingSpot) {
         this.name = name;
@@ -30,5 +33,9 @@ public abstract class Stall {
 
     public void setParkingSpot(int parkingSpot) {
         this.parkingSpot = parkingSpot;
+    }
+
+    public int getRating() {
+        return rating;
     }
 }

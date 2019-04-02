@@ -1,8 +1,11 @@
 package Atractions;
 
-public abstract class Atraction {
+import Interfaces.IReviwed;
+
+public abstract class Atraction implements IReviwed {
 
     private String name;
+    private int rating;
 
     public Atraction(String name) {
         this.name = name;
@@ -10,5 +13,9 @@ public abstract class Atraction {
 
     public String getName() {
         return name;
+    }
+
+    public int getRating() {
+        return rating;
     }
 }
