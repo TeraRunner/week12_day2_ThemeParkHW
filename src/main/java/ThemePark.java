@@ -15,9 +15,6 @@ public class ThemePark {
     }
 
     public ArrayList<IReviwed> getAllReviewed() {
-        for (Atraction atraction : atractionsList) {
-            ratingList.add(atraction.getRating());
-        }
         return ratingList;
     }
 
